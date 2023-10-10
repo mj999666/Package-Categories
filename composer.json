@@ -14,6 +14,11 @@
             "src/helpers.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Returntrueir\\Categories\\Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
