@@ -6,7 +6,7 @@ class CategoriesServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        dd(1);
+
     }
 
     public function register()
