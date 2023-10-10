@@ -12,8 +12,8 @@ class CategoriesServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('categories' , function(){
-            return new Hello();
+        $this->app->bind('return-categories' , function(){
+            return new Hello;
         });
     }
 }

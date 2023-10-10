@@ -7,6 +7,6 @@ class CategoriesFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'categories';
+        return 'return-categories';
     }
 }
