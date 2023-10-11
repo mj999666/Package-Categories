@@ -8,4 +8,9 @@ class HelloController
     {
         return "Test2";
     }
+
+    public function testView()
+    {
+        return view("Categories::testView");
+    }
 }

@@ -8,3 +8,4 @@ Route::get("/test" , function (){
 });
 
 Route::get("/test2" , "HelloController@index");
+Route::get("/test-view" , "HelloController@testView");

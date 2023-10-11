@@ -19,4 +19,11 @@ class HelloTest extends TestCase
         );
     }
 
+    public function testCanSeeTextInView()
+    {
+        #$this->withoutExceptionHandling();
+        $this->get("test-view")->assertViewIs("Categories::testView");
+    }
+
+
 }
