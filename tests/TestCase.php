@@ -9,6 +9,15 @@ use Returntrueir\Categories\Providers\RouteServiceProvider;
 
 class TestCase extends BaseTestCase
 {
+    protected function getEnvironmentSetUp($app)
+    {
+        $app['config']->set("database.default",'testing');
+        $app['config']->set("database.default.testing",[
+            'driver' => 'sqlite' ,
+            'database' => ':memory:'
+        ]);
+    }
+
     protected function getPackageProviders($app)
     {
         return [

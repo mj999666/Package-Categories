@@ -16,12 +16,15 @@ class CategoriesServiceProvider extends ServiceProvider
             $this->basePath("database/migrations")
         );
         $this->publishes([
+            $this->basePath("database/migrations") => database_path('migrations')
+        ],'returntrueir-categories-migrations');
+        $this->publishes([
             $this->basePath("resources/views/") => resource_path("views/vendor/Categories")
-        ] , "Categories-views");
+        ] , "returntrueir-categories-views");
 
         $this->publishes([
            $this->basePath("config/categories.php") => base_path("config/categories.php")
-        ], "Categories-config");
+        ], "returntrueir-categories-config");
     }
 
     public function register()
