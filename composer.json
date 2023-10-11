@@ -22,7 +22,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Returntrueir\\Categories\\Providers\\CategoriesServiceProvider"
+                "Returntrueir\\Categories\\Providers\\CategoriesServiceProvider",
+                "Returntrueir\\Categories\\Providers\\RouteServiceProvider"
             ],
             "aliases": {
                 "Categories" : "Returntrueir\\Categories\\Facades\\CategoriesFacade"

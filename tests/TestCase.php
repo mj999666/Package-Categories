@@ -5,6 +5,7 @@ namespace Returntrueir\Categories\Tests;
 use Returntrueir\Categories\Facades\CategoriesFacade;
 use Returntrueir\Categories\Providers\CategoriesServiceProvider;
 use \Orchestra\Testbench\TestCase as BaseTestCase;
+use Returntrueir\Categories\Providers\RouteServiceProvider;
 
 class TestCase extends BaseTestCase
 {
@@ -12,6 +13,7 @@ class TestCase extends BaseTestCase
     {
         return [
             CategoriesServiceProvider::class,
+            RouteServiceProvider::class,
         ];
     }
     protected function getPackageAliases($app)
