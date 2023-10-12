@@ -15,6 +15,17 @@ class CategoriesServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(
             $this->basePath("database/migrations")
         );
+
+        $this->loadTranslationsFrom(
+            $this->basePath('lang') ,
+            'Categories'
+        );
+
+        $this->publishes([
+            $this->basePath('lang') => base_path("lang/vendor/Categories") ,
+            'returntrueir-categories-translations'
+        ]);
+
         $this->publishes([
             $this->basePath("database/migrations") => database_path('migrations')
         ],'returntrueir-categories-migrations');
@@ -25,6 +36,10 @@ class CategoriesServiceProvider extends ServiceProvider
         $this->publishes([
            $this->basePath("config/categories.php") => base_path("config/categories.php")
         ], "returntrueir-categories-config");
+
+        $this->publishes([
+            $this->basePath('resources/static') => public_path("vendor/categories")
+        ], "returntrueir-categories-static-assets");
     }
 
     public function register()

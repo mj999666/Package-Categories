@@ -13,4 +13,9 @@ class HelloController
     {
         return view("Categories::testView");
     }
+
+    public function testLang()
+    {
+        return view("Categories::testLang");
+    }
 }

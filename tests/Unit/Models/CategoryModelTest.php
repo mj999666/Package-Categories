@@ -17,5 +17,7 @@ class CategoryModelTest extends TestCase
         $category->title = "Test 1";
         $category->save();
 
+        $this->assertEquals(1 , Category::count());
+
     }
 }

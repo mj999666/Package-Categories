@@ -12,10 +12,16 @@ class TestCase extends BaseTestCase
     protected function getEnvironmentSetUp($app)
     {
         $app['config']->set("database.default",'testing');
-        $app['config']->set("database.default.testing",[
+        $app['config']->set("database.connection.testing",[
             'driver' => 'sqlite' ,
             'database' => ':memory:'
         ]);
+
+        /*$app['config']->set("database.default.testing",[
+            'username' => 'root' ,
+            'password' => ''
+        ]);*/
+
     }
 
     protected function getPackageProviders($app)
