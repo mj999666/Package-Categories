@@ -3,7 +3,8 @@
     "description": "Everything can accept one or more categories",
     "type": "library",
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "cviebrock/eloquent-sluggable": "^10.0"
     },
     "license": "MIT",
     "autoload": {

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('slug')->nullable();
             $table->string('slug_title_url')->nullable();
-            $table->string('title')->nullable();
+            $table->string('page_title')->nullable();
             $table->text("body")->nullable();
             $table->integer('sort')->default(0);
 
