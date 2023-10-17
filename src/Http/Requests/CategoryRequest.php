@@ -26,4 +26,19 @@ class CategoryRequest extends FormRequest
             'category_id' => ['nullable','exists:categories,id'] ,
         ];
     }
+    protected function prepareForValidation()
+    {
+        if (is_null($this->input("page_title")))
+        {
+            $this->merge(['page_title'=> $this->input("slug_title_url")]);
+        }
+        if (is_null($this->input("h1_title")))
+        {
+            $this->merge(['h1_title'=> $this->input("slug_title_url")]);
+        }
+        if (is_null($this->input("seo_meta_description")))
+        {
+            $this->merge(['seo_meta_description'=> $this->input("slug_title_url")]);
+        }
+    }
 }
