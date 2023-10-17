@@ -16,6 +16,11 @@ class RoutingTest extends TestCase
         $this->withoutExceptionHandling();
         $this->get("test2")->assertSuccessful();
     }
+    public function testCategoryStoreRouteExist()
+    {
+        $this->withoutExceptionHandling();
+        $this->get("category/create")->assertSuccessful();
+    }
 /*    public function testTest3RouteExist()
     {
         $this->withoutExceptionHandling();

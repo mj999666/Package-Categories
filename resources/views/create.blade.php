@@ -14,11 +14,17 @@
                             name="slug_title_url"
                             id="slug_title_url"
                             aria-describedby="error-validation-slug_title_url"
-                            class="form-control {{ $errors->has('slug_title_url') ? "is-invalid" : "" }}"
+                            class="form-control
+                            @if(isset($errors))
+                                {{ $errors->has('slug_title_url') ? "is-invalid" : "" }}
+                            @endif
+                            "
                             type="text"
                     >
                     <div id="error-validation-slug_title_url" class="invalid-feedback">
-                        {{ $errors->first('slug_title_url') }}
+                        @if(isset($errors))
+                            {{ $errors->first('slug_title_url') }}
+                        @endif
                     </div>
                 </div>
             </div>
@@ -33,11 +39,16 @@
                             name="page_title"
                             id="page_title"
                             aria-describedby="error-validation-page_title"
-                            class="form-control {{ $errors->has('page_title') ? "is-invalid" : "" }}"
+                            class="form-control
+                            @if(isset($errors))
+                                {{ $errors->has('page_title') ? "is-invalid" : "" }}
+                            @endif"
                             type="text"
                     >
                     <div id="error-validation-page_title" class="invalid-feedback">
-                        {{ $errors->first('page_title') }}
+                        @if(isset($errors))
+                            {{ $errors->first('page_title') }}
+                        @endif
                     </div>
                 </div>
             </div>
@@ -52,11 +63,16 @@
                             name="h1_title"
                             id="h1_title"
                             aria-describedby="error-validation-h1_title"
-                            class="form-control {{ $errors->has('h1_title') ? "is-invalid" : "" }}"
+                            class="form-control
+                            @if(isset($errors))
+                                {{ $errors->has('h1_title') ? "is-invalid" : "" }}
+                            @endif"
                             type="text"
                     >
                     <div id="error-validation-h1_title" class="invalid-feedback">
-                        {{ $errors->first('h1_title') }}
+                        @if(isset($errors))
+                            {{ $errors->first('h1_title') }}
+                        @endif
                     </div>
                 </div>
             </div>
