@@ -28,7 +28,7 @@ class TestCase extends BaseTestCase
     {
         return [
             CategoriesServiceProvider::class,
-            RouteServiceProvider::class,
+            #RouteServiceProvider::class,
         ];
     }
     protected function getPackageAliases($app)

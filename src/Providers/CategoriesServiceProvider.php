@@ -7,7 +7,8 @@ class CategoriesServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        #$this->loadRoutesFrom(__DIR__."/../../routes/web.php");
+        $this->loadRoutesFrom( $this->basePath("routes/web.php"));
+
         $this->loadViewsFrom(
             $this->basePath("resources/views/") ,
             "Categories"
