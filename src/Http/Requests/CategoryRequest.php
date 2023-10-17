@@ -1,6 +1,6 @@
 <?php
 
-namespace Returntrueir\Categories\Requests;
+namespace Returntrueir\Categories\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

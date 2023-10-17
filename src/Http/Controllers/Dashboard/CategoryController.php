@@ -5,7 +5,7 @@ namespace Returntrueir\Categories\Http\Controllers\Dashboard;
 use Illuminate\Http\Request;
 use Returntrueir\Categories\Http\Controllers\Controller;
 use Returntrueir\Categories\Models\Category;
-use Returntrueir\Categories\Requests\CategoryRequest;
+use Returntrueir\Categories\Http\Requests\CategoryRequest;
 use Returntrueir\Categories\Services\CategoryService;
 
 

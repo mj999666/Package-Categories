@@ -1,6 +1,6 @@
 <?php
 
-namespace Returntrueir\Categories\Http\Controllers\Api;
+namespace Returntrueir\Categories\Http\Controllers\API;
 
 class CategoryController
 {

@@ -4,7 +4,7 @@ namespace Returntrueir\Categories\Services;
 
 use Illuminate\Http\Request;
 use Returntrueir\Categories\Models\Category;
-use Returntrueir\Categories\Requests\CategoryRequest;
+use Returntrueir\Categories\Http\Requests\CategoryRequest;
 
 class CategoryService
 {
